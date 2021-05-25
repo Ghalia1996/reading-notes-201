@@ -1,0 +1,61 @@
+#Introduction to links and anchors
+
+**HTML offers many of the conventional publishing idioms for rich text and structured documents, but what separates it from most other markup languages is its features for hypertext and interactive documents. This section introduces the link (or hyperlink, or Web link), the basic hypertext construct. A link is a connection from one Web resource to another. Although a simple concept, the link has been one of the primary forces driving the success of the Web.
+
+A link has two ends -- called anchors -- and a direction. The link starts at the "source" anchor and points to the "destination" anchor, which may be any Web resource (e.g., an image, a video clip, a sound bite, a program, an HTML document, an element within an HTML document, etc.)**
+
+#Visiting a linked resource
+
+*The default behavior associated with a link is the retrieval of another Web resource. This behavior is commonly and implicitly obtained by selecting the link (e.g., by clicking, through keyboard input, etc.).
+
+The following HTML excerpt contains two links, one whose destination anchor is an HTML document named "chapter2.html" and the other whose destination anchor is a GIF image in the file "forest.gif":*
+ Thus, for example, an author might create a table of contents whose entries link to header elements H2, H3, etc., in the same document. Using the A element to create destination anchors, we would write:
+ ><H1>Table of Contents</H1>
+<P><A href="#section1">Introduction</A><BR>
+<A href="#section2">Some background</A><BR>
+<A href="#section2.1">On a more personal note</A><BR>
+...the rest of the table of contents...
+...the document body...
+<H2><A name="section1">Introduction</A></H2>
+...section 1...
+<H2><A name="section2">Some background</A></H2>
+...section 2...
+<H3><A name="section2.1">On a more personal note</A></H3>
+...section 2.1...
+*We may achieve the same effect by making the header elements themselves the anchors:*
+><H1>Table of Contents</H1>
+<P><A href="#section1">Introduction</A><BR>
+<A href="#section2">Some background</A><BR>
+<A href="#section2.1">On a more personal note</A><BR>
+...the rest of the table of contents...
+...the document body...
+<H2 id="section1">Introduction</H2>
+...section 1...
+<H2 id="section2">Some background</H2>
+...section 2...
+<H3 id="section2.1">On a more personal note</H3>
+...section 2.1...
+
+#HTML Layout Elements
+HTML has several semantic elements that define the different parts of a web page:
+
+#HTML5 Semantic Elements	
+<header> - Defines a header for a document or a section
+<nav> - Defines a set of navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent, self-contained content
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details that the user can open and close on demand
+<summary> - Defines a heading for the <details> element
+
+#HTML Layout Techniques
+There are four different techniques to create multicolumn layouts. Each technique has its pros and cons:
+
+CSS framework
+CSS float property
+CSS flexbox
+CSS grid
+
+
+
